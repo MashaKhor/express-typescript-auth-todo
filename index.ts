@@ -2,7 +2,7 @@ import express from 'express'
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import dotenv from 'dotenv'
-dotenv.config({path: `.${process.env.NODE_ENV}.env`})
+dotenv.config({path: `.development.env`})
 
 import router from "./router/index";
 import errorMiddleware from "./middleware/error.middleware";
